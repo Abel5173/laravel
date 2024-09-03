@@ -13,12 +13,12 @@
         <div class="flex h-16 items-center justify-between">
             <div class="flex items-center">
             <div class="flex-shrink-0">
-                <img class="h-8 w-8" src="https://laracasts.com/images/logo/logo-triangle.svg" alt="Your Company">
+                <img class="h-8 w-8" src="https://svgshare.com/i/19yU.svg"  alt="Your Company">
             </div>
             <div class="hidden md:block">
                 <div class="ml-10 flex items-baseline space-x-4">
                     <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
-                    <x-nav-link href="/jobs" :active="request()->is('jobs')">jobs</x-nav-link>
+                    <x-nav-link href="/jobs" :active="request()->is('jobs')">Jobs</x-nav-link>
                     <x-nav-link href="/contact" :active="request()->is('contact')">Contact</x-nav-link>
                 </div>
             </div>
@@ -39,7 +39,7 @@
                         <button type="button" class="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                         <span class="absolute -inset-1.5"></span>
                         <span class="sr-only">Open user menu</span>
-                        <img class="h-8 w-8 rounded-full" src="https://laracasts.com/images/lary-ai-face.svg" alt="">
+                        <img class="h-8 w-8 rounded-full" src="https://img.freepik.com/free-vector/gorilla-head-monochrome-style_225004-463.jpg?t=st=1725396482~exp=1725400082~hmac=6834d0532404a5d1bd80e90c27d1b0cbe6713d36d6f545934971f9ed3108cc5f&w=740" alt="">
                         </button>
                     </div>
                 </div>

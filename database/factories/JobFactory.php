@@ -6,7 +6,7 @@ use App\Models\Employer;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 
-class JobFactory extends Factory
+class JobFactory extends Factory // To run the Factory using php artisan tinker, use the command Job::factory()->count(5)->create();
 {
     public function definition(): array
     {
