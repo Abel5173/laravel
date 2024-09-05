@@ -33,7 +33,6 @@
                 </svg>
                 </button>
 
-                <!-- Profile dropdown -->
                 <div class="relative ml-3">
                     <div>
                         <button type="button" class="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
@@ -46,7 +45,6 @@
             </div>
             </div>
             <div class="-mr-2 flex md:hidden">
-            <!-- Mobile menu button -->
             <button type="button" class="relative inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" aria-controls="mobile-menu" aria-expanded="false">
                 <span class="absolute -inset-0.5"></span>
                 <span class="sr-only">Open main menu</span>
@@ -93,8 +91,9 @@
     </nav>
 
     <header class="bg-white shadow">
-        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-        <h1 class="text-3xl font-bold tracking-tight text-gray-900">{{ $heading }}</h1>
+        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 sm:flex justify-between">
+            <h1 class="text-3xl font-bold tracking-tight text-gray-900">{{ $heading }}</h1>
+            <x-button href="/jobs/create">Create Job</x-button>
         </div>
     </header>
     <main>
