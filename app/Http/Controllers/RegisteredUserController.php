@@ -10,8 +10,8 @@ use Illuminate\Validation\Rules\Password;
 class RegisteredUserController extends Controller
 {
     public function create() {
-        dd('create');
-        // return view('auth.register');
+        // dd('create');
+        return view('auth.register');
     }
 
     public function store() {
@@ -23,6 +23,7 @@ class RegisteredUserController extends Controller
             'password'=> ['required', Password::min(6), 'confirmed']
         ]);
 
+        //dd($attributes);
         // Create the user
         $user = User::create($attributes);
 

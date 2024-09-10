@@ -38,15 +38,15 @@ class JobController extends Controller
     }
 
     public function edit(Job $job) {
-    return view('jobs.edit', ['job' => $job]);
+        return view('jobs.edit', ['job' => $job]);
     }
 
     public function update(Job $job) {
         // validate
-    request()->validate([
-        'title' => ['required', 'min:3'],
-        'salary' => ['required'],
-    ]);
+        request()->validate([
+            'title' => ['required', 'min:3'],
+            'salary' => ['required'],
+        ]);
     // authorize 
 
     // update the job
