@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Mail\JobPosted;
 use App\Models\Job;
+use App\Models\Tag;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
@@ -13,7 +14,9 @@ class JobController extends Controller
 {
     public function index() {
         return view('jobs.index', [
-        'jobs' => Job::with('employer')->latest()->simplePaginate(3) 
+        'jobs' => Job::all(),
+        // with('employer')->latest()->simplePaginate(3),
+        'tags' => Tag::all(),
         ]);
     }
 

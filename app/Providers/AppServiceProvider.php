@@ -25,9 +25,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        if (DB::getDriverName() === 'sqlite') {
-            DB::statement('PRAGMA foreign_keys=ON;');
-        }
-        Model::preventLazyLoading();
+        // Model::unguard();
+        // Model::preventLazyLoading();
     }
 }

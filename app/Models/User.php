@@ -23,4 +23,9 @@ protected function casts(): array
             'password' => 'hashed',
         ];
     }
+
+    public function employer()
+    {
+        return $this->hasOne(Employer::class);
+    }
 }
